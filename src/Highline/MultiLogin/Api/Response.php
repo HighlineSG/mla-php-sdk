@@ -49,8 +49,6 @@ class Response
 
         if (isset($contents['data'])) {
             $this->data = $contents['data'];
-        } else {
-            $this->data = $contents;
         }
 
         if (isset($contents['status'])) {
