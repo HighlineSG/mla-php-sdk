@@ -1,0 +1,16 @@
+{
+    "name": "highline/mla-php-sdk",
+    "license": "MIT",
+    "description": "PHP SDK for the MultiLogin Rest API v2",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Highline\\": "src/Highline/"
+        }
+    },
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "ext-json": "*"
+    }
+}
