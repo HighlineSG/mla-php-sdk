@@ -47,8 +47,8 @@ class Response
             throw new ApiException($message);
         }
 
-        if (isset($contents['data'])) {
-            $this->data = $contents['data'];
+        if (isset($contents['uuid'])) {
+            $this->data['uuid'] = $contents['uuid'];
         }
 
         if (isset($contents['status'])) {
