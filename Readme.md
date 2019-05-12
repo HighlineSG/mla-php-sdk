@@ -7,6 +7,7 @@ Work in progress...
 `composer require highline/mla-php-sdk`
 
 ## Examples
+###Version 2.0
 * [Create Profile](https://github.com/HighlineSG/mla-php-sdk/wiki/Example:-Create-a-new-profile)
 
 ## License
