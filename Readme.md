@@ -7,6 +7,8 @@ Work in progress...
 `composer require highline/mla-php-sdk`
 
 ## Examples
+There are two versions of Rest API – v1 and v2. Rest API v1 is used in Multilogin 2.x and 3.x. However, Creation of browser profiles on 3.x version can be only accomplished using Rest API v2.
+
 2.0
 * [Create Profile](https://github.com/HighlineSG/mla-php-sdk/wiki/2.0---Example:-Create-a-new-profile)
 
