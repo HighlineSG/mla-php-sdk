@@ -1,5 +1,5 @@
 <?php
-namespace Highline\MultiLogin\Model\Profile;
+namespace Highline\MultiLogin\Api\V2\Model\Profile;
 
 class WebRTC
 {

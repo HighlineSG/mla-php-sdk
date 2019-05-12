@@ -1,17 +1,17 @@
 <?php
-namespace Highline\MultiLogin\Model;
+namespace Highline\MultiLogin\Api\V2\Model;
 
-use Highline\MultiLogin\Api\Operation\Create;
-use Highline\MultiLogin\Model\Profile\AudioContext;
-use Highline\MultiLogin\Model\Profile\Canvas;
-use Highline\MultiLogin\Model\Profile\Fonts;
-use Highline\MultiLogin\Model\Profile\Geolocation;
-use Highline\MultiLogin\Model\Profile\MediaDevices;
-use Highline\MultiLogin\Model\Profile\Navigator;
-use Highline\MultiLogin\Model\Profile\Plugins;
-use Highline\MultiLogin\Model\Profile\Storage;
-use Highline\MultiLogin\Model\Profile\Timezone;
-use Highline\MultiLogin\Model\Profile\WebRTC;
+use Highline\MultiLogin\Api\V2\Model\Profile\AudioContext;
+use Highline\MultiLogin\Api\V2\Model\Profile\Canvas;
+use Highline\MultiLogin\Api\V2\Model\Profile\Fonts;
+use Highline\MultiLogin\Api\V2\Model\Profile\Geolocation;
+use Highline\MultiLogin\Api\V2\Model\Profile\MediaDevices;
+use Highline\MultiLogin\Api\V2\Model\Profile\Navigator;
+use Highline\MultiLogin\Api\V2\Model\Profile\Plugins;
+use Highline\MultiLogin\Api\V2\Model\Profile\Storage;
+use Highline\MultiLogin\Api\V2\Model\Profile\Timezone;
+use Highline\MultiLogin\Api\V2\Model\Profile\WebRTC;
+use Highline\MultiLogin\Api\V2\Operation\Create;
 
 class Profile
 {

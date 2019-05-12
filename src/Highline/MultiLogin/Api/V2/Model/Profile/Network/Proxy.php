@@ -1,5 +1,5 @@
 <?php
-namespace Highline\MultiLogin\Model\Profile\Network;
+namespace Highline\MultiLogin\Api\V2\Model\Profile\Network;
 
 class Proxy
 {

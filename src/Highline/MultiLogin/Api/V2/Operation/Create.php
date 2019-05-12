@@ -1,13 +1,13 @@
 <?php
-namespace Highline\MultiLogin\Api\Operation;
+namespace Highline\MultiLogin\Api\V2\Operation;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
+use GuzzleHttp\Exception\GuzzleException;
 use Highline\MultiLogin\Api\Exception\ApiException;
 use Highline\MultiLogin\Api\Exception\EmptyResponseException;
-use Highline\MultiLogin\Api\Response;
+use Highline\MultiLogin\Api\V2\Response;
 use Highline\MultiLogin\MultiLogin;
-use GuzzleHttp\Exception\GuzzleException;
 
 trait Create
 {
@@ -19,7 +19,7 @@ trait Create
      */
     public function create(): Response
     {
-        $uri = MultiLogin::$apiEndpoint . self::OBJECT_NAME;
+        $uri = MultiLogin::$apiEndpoint . 'v2/' . self::OBJECT_NAME;
 
         $client = new Client();
 

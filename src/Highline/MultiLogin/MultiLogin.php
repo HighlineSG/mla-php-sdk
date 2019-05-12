@@ -11,7 +11,7 @@ class MultiLogin
     /**
      * @var string
      */
-    public static $apiEndpoint = 'https://api.multiloginapp.com/v2/';
+    public static $apiEndpoint = 'https://api.multiloginapp.com/';
 
     /**
      * @return string

@@ -1,5 +1,5 @@
 <?php
-namespace Highline\MultiLogin\Api;
+namespace Highline\MultiLogin\Api\V2;
 
 use GuzzleHttp\Psr7\Response as GuzzleHttpResponse;
 use Highline\MultiLogin\Api\Exception\ApiException;
