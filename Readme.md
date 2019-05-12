@@ -8,7 +8,7 @@ Work in progress...
 
 ## Examples
 2.0
-* [Create Profile](https://github.com/HighlineSG/mla-php-sdk/wiki/Example:-Create-a-new-profile)
+* [Create Profile](https://github.com/HighlineSG/mla-php-sdk/wiki/2.0---Example:-Create-a-new-profile)
 
 ## License
 This project is licensed under the MIT License
