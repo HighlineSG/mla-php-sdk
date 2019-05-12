@@ -3,6 +3,7 @@ namespace Highline\MultiLogin\Api\V1\Operation;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
+use Highline\MultiLogin\Api\Exception\ConfigurationException;
 use Highline\MultiLogin\Api\Exception\MissingParameterException;
 use Highline\MultiLogin\Api\Utility\ConvertResourceToJson;
 use Highline\MultiLogin\Api\V1\Response;
@@ -16,14 +17,19 @@ trait Update
     /**
      * @return Response
      * @throws GuzzleException
+     * @throws ConfigurationException
      * @throws ApiException
      * @throws EmptyResponseException
      * @throws MissingParameterException
      */
     public function update(): Response
     {
+        if (MultiLogin::$token === NULL) {
+            throw new ConfigurationException('No MLA Token was set.', 1557681516);
+        }
+
         if ($this->id === NULL) {
-            throw new MissingParameterException();
+            throw new MissingParameterException('No id was set for type ' . self::OBJECT_NAME, 1557681579);
         }
 
         $uri = MultiLogin::$apiEndpoint . 'v1/' . self::OBJECT_NAME . '/update';

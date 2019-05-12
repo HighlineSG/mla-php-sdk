@@ -32,7 +32,7 @@ class Response
         $contents = $response->getBody()->getContents();
 
         if (empty($contents)) {
-            throw new EmptyResponseException();
+            throw new EmptyResponseException('MLA API Response is empty', 1557681652);
         }
 
         $contents = json_decode($contents, true);
@@ -44,7 +44,7 @@ class Response
                 $message .= ' ' . $contents['value'];
             }
 
-            throw new ApiException($message);
+            throw new ApiException($message, 1557681668);
         }
 
         if (isset($contents['uuid'])) {

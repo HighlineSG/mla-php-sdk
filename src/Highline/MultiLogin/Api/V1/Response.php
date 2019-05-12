@@ -33,13 +33,13 @@ class Response
         $contents = $response->getBody()->getContents();
 
         if (empty($contents)) {
-            throw new EmptyResponseException();
+            throw new EmptyResponseException('MLA API Response is empty', 1557681695);
         }
 
         $contents = json_decode($contents, true);
 
         if ($response->getStatusCode() !== 200) {
-            throw new ApiException($contents['status'] . ' ' . $contents['value']);
+            throw new ApiException($contents['status'] . ' ' . $contents['value'], 1557681678);
         }
 
         if (isset($contents['data'])) {
