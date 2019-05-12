@@ -1,9 +1,18 @@
 <?php
 namespace Highline\MultiLogin\Api\V1\Model;
 
+use Highline\MultiLogin\Api\V1\Operation\Update;
+
 class Profile
 {
+    use Update;
+
     const OBJECT_NAME = 'profile';
+
+    /**
+     * @var string
+     */
+    private $id;
 
     /**
      * @var string
@@ -174,4 +183,14 @@ class Profile
      * @var bool
      */
     public $generateZeroFingerprintsData;
+
+    /**
+     * @param string $id
+     */
+    public function __construct(string $id = '')
+    {
+        if ($id !== '') {
+            $this->id = $id;
+        }
+    }
 }
